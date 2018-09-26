@@ -21,14 +21,14 @@ export default class BBDrawer extends BaseComponent {
     path = new Animated.Value(0)
 
     static defaultProps = {
-        width: AppConst._SCREEN_WIDTH * 0.7,
-        side: 'left'
+        width: AppConst._SCREEN_WIDTH * 0.7,  //默認的側邊欄寬度
+        side: 'left'  // 默認左邊彈出
     }
 
     constructor(props) {
         super(props)
         this.state = {
-            isShow: false,
+            isShow: false, // 是否彈出
 
         }
     }
